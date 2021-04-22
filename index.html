@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Theme Made By www.w3schools.com - No Copyright -->
+  <title>Paula & Sarah lawyers | Lawyers in Ireland | Lawyers in Limerick</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <style>
+  body {
+    font: 400 15px/1.8 Lato, sans-serif;
+    color: #777;
+  }
+  h3, h4 {
+    margin: 10px 0 30px 0;
+    letter-spacing: 10px;
+    font-size: 20px;
+    color: #111;
+  }
+  .container {
+    padding: 80px 120px;
+  }
+  .pic {
+    border: 10px solid transparent;
+    margin-bottom: 25px;
+    width: 70%;
+    height: 70%;
+    opacity: 0.75;
+  }
+  .person:hover {
+    border-color: #f1f1f1;
+  }
+  .carousel-inner img {
+    width: 100%; /* Set width to 100% */
+    margin: auto;
+  }
+  .carousel-caption h3 {
+    color: #fff !important;
+  }
+  @media (max-width: 600px) {
+    .carousel-caption {
+      display: none; /* Hide the carousel text when the screen is less than 600 pixels wide */
+    }
+  }
+  .bg-1 {
+    background: #2d2d30;
+    color: #bdbdbd;
+  }
+  .bg-1 h3 {color: #fff;}
+  .bg-1 p {font-style: italic;}
+  .list-group-item:first-child {
+    border-top-right-radius: 0;
+    border-top-left-radius: 0;
+  }
+  .list-group-item:last-child {
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+  .thumbnail {
+    padding: 0 0 15px 0;
+    border: none;
+    border-radius: 0;
+  }
+  .thumbnail p {
+    margin-top: 15px;
+    color: #555;
+  }
+  .btn {
+    padding: 10px 20px;
+    background-color: #333;
+    color: #f1f1f1;
+    border-radius: 0;
+    transition: .2s;
+  }
+  .btn:hover, .btn:focus {
+    border: 1px solid #333;
+    background-color: #fff;
+    color: #000;
+  }
+  .modal-header, h4, .close {
+    background-color: #333;
+    color: #fff !important;
+    text-align: center;
+    font-size: 30px;
+  }
+  .modal-header, .modal-body {
+    padding: 40px 50px;
+  }
+  .nav-tabs li a {
+    color: #777;
+  }
+  .navbar {
+    font-family: Montserrat, sans-serif;
+    margin-bottom: 0;
+    background-color: #2d2d30;
+    border: 0;
+    font-size: 11px !important;
+    letter-spacing: 4px;
+    opacity: 0.9;
+  }
+  .navbar li a, .navbar .navbar-brand {
+    color: #d5d5d5 !important;
+  }
+  .navbar-nav li a:hover {
+    color: #fff !important;
+  }
+  .navbar-nav li.active a {
+    color: #fff !important;
+    background-color: #29292c !important;
+  }
+  .news a{
+    text-decoration: none;
+    font: 400 15px/1.8 Montserrat, sans-serif;
+    color: #29292c;
+    font-weight: 600;
+  }
+  .news a:hover{
+    color:	#FF4800;
+  }
+  footer {
+    background-color: #2d2d30;
+    color: #f5f5f5;
+    padding: 32px;
+  }
+  footer a {
+    color: #f5f5f5;
+  }
+  footer a:hover {
+    color: #777;
+    text-decoration: none;
+  }
+  .form-control {
+    border-radius: 0;
+  }
+  textarea {
+    resize: none;
+  }
+  </style>
+</head>
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="50">
+
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html">PS Lawyers</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#home">HOME</a></li>
+        <li><a href="#victories">NOTABLE VICTORIES</a></li>
+        <li><a href="#areas">PRACTICE AREAS</a></li>
+        <li><a href="#attorneys">ATTORNEYS</a></li>
+        <li><a href="#about">ABOUT US</a></li>
+        <li><a href="#contact">CONTACT</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner" role="listbox">
+      <div class="item active">
+        <img src="images/cyber-security.jpg" alt="Cyber Security" style="width:100%">
+        <div class="carousel-caption">
+          <h2>Cyber Security</h2>
+          <h3>We act in Cyber Security law to make sure internet is safe</h3>
+        </div>
+      </div>
+
+      <div class="item">
+        <img src="images/environmental.jpg" alt="Environmental Litigation" style="width:100%">
+        <div class="carousel-caption">
+          <h2>Environmental Litigation</h2>
+          <h3>We act in Environmental law to make sure nature is safe</h3>
+        </div>
+      </div>
+
+      <div class="item">
+        <img src="images/criminal-law.jpg" alt="Criminal Law" style="width:100%">
+        <div class="carousel-caption">
+          <h2>Criminal Law</h3>
+          <h3>We act in Criminal Law to ensure people's and companies' rights</h3>
+        </div>
+      </div>
+    </div>
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+</div>
+
+<!-- Container (Home Section) -->
+<div id="home" class="container text-center">
+  <h3>We fight for you!</h3>
+  <p><em>Recent news</em></p>
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi ac magna est. Vivamus vel purus nec libero egestas fermentum. Sed accumsan id turpis nec bibendum. Nunc pharetra turpis eget enim euismod mollis. Vestibulum semper elit et odio pharetra convallis. Donec quis nunc rutrum, scelerisque libero eget, iaculis velit. Praesent accumsan luctus sem vitae pellentesque. Etiam lorem nisi, suscipit nec convallis id, gravida ac nunc. Suspendisse auctor pellentesque tincidunt. Cras tincidunt mi tempus, gravida tellus et, accumsan augue. Nulla luctus nec eros id convallis. Praesent ac metus turpis. Donec molestie, lacus a iaculis dictum, turpis tortor pellentesque lacus, in porta elit nisl ac justo. Proin ut odio est. Nullam enim leo, molestie et neque vitae, congue varius tortor. Maecenas sit amet condimentum risus, eget pharetra lacus.</p>
+  <br>
+  <div class="row">
+    <div class="col-sm-4">
+      <div class="well">
+        <div class="news">
+          <a href="#">
+            <p>SP successfully dismiss appeal in robbery case</p>
+            <p>07 Apr 2018</p>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-4">
+      <div class="well" >
+        <div class="news">
+          <a href="#">
+            <p>SP wins overtaxation case and ensures restitution</p>
+            <p>07 Apr 2018</p>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-4">
+      <div class="well">
+        <div class="news">
+          <a href="#">
+            <p>Appeal is accepted over data privacy invasion</p>
+            <p>30 Mar 2018</p>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- Container (Notable Victories Section) -->
+<div id="victories" class="container text-center">
+    <h3>Notable victories</h3>
+    <!-- <p><em>We love music!</em></p> -->
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    <br>
+    <div class="row">
+      <div class="col-sm-4">
+        <p class="text-center"><strong>Case: WB vs PLF - 2018</strong></p><br>
+        <a href="#notable1" data-toggle="collapse">
+          <img src="images/notable1.jpg" class="img-rounded pic" alt="WB vs PLF case image" width="255" height="255">
+        </a>
+        <div id="notable1" class="collapse">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi pharetra dolor at metus blandit, in fringilla ex dignissim.</p>
+          <p>January 2018</p>
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <p class="text-center"><strong>Case: MK vs GH - 2017</strong></p><br>
+        <a href="#notable2" data-toggle="collapse">
+          <img src="images/notable2.jpg" class="img-rounded pic" alt="MK vs GH case image" width="255" height="255">
+        </a>
+        <div id="notable2" class="collapse">
+          <p>Ut convallis eleifend diam et mattis. Vestibulum eget tortor dignissim, blandit magna eget, euismod est.</p>
+          <p>November 2017</p>
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <p class="text-center"><strong>Case: LY vs FR - 2017</strong></p><br>
+        <a href="#notable3" data-toggle="collapse">
+          <img src="images/notable3.jpg" class="img-rounded pic" alt="LY vs FR case image" width="255" height="255">
+        </a>
+        <div id="notable3" class="collapse">
+          <p>Proin elementum nunc a eros luctus, eu ante suscipit. Duis tincidunt, justo vel elementum, odio tempor tellus, sed aliquam eu felis.</p>
+          <p>October 2017</p>
+        </div>
+      </div>
+    </div>
+</div>
+
+<!-- Container (Practice Areas Section) -->
+<div id="areas" class="container text-center">
+  <h3>Practice areas</h3>
+  <p><em>Expanding our horizons to better serve you!</em></p>
+  <p>We have created a fictional band website. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+  <br>
+  <div class="row">
+    <div class="col-sm-4">
+      <div class="well">
+        <p class="text-center"><strong>Civil Rights</strong></p><br>
+        <a href="#civil-rights" data-toggle="collapse">
+          <img src="images/civil-rights.jpg" class="img-circle pic" alt="Civil Rights Image" width="255" height="255">
+        </a>
+        <div id="civil-rights" class="collapse">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam rhoncus bibendum quam, ut mollis quam dignissim ut. Pellentesque lacinia ultrices dignissim. Nulla vehicula diam non.</p>
+          <p>Attorney in charge: Paula Oehme, Sarah Silva</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-4">
+      <div class="well">
+        <p class="text-center"><strong>Criminal Law</strong></p><br>
+        <a href="#criminal-law" data-toggle="collapse">
+          <img src="images/criminal-law2.jpg" class="img-circle pic" alt="Criminal Law Image" width="255" height="255">
+        </a>
+        <div id="criminal-law" class="collapse">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc at ullamcorper orci, sed convallis sem. Duis eget sagittis urna. Sed ligula tortor, hendrerit sit amet.</p>
+          <p>Attorney in charge: Paula Oehme</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-4">
+      <div class="well">
+        <p class="text-center"><strong>Cyber Security & Data Protection</strong></p><br>
+        <a href="#cyber-security" data-toggle="collapse">
+          <img src="images/cyber-security2.jpg" class="img-circle pic" alt="Cyber Security Image" width="255" height="255">
+        </a>
+        <div id="cyber-security" class="collapse">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam in erat nec ipsum egestas scelerisque. In volutpat metus turpis, eu auctor eros suscipit quis. Sed.</p>
+          <p>Attorney in charge: Paula Oehme</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    
+    <div class="col-sm-4">
+      <div class="well">
+        <p class="text-center"><strong>Employment Litigation</strong></p><br>
+        <a href="#employment-litigation" data-toggle="collapse">
+          <img src="images/employment.jpg" class="img-circle pic" alt="Employment Litigation Image" width="255" height="255">
+        </a>
+        <div id="employment-litigation" class="collapse">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ultrices aliquet orci and mollis. Vivamus porta est and tristique vestibulum. Duis fringilla fringilla tincidunt. Class.</p>
+          <p>Attorney in charge: Sarah Silva</p>
+        </div>
+      </div>
+    </div>
+    
+    <div class="col-sm-4">
+      <div class="well">
+        <p class="text-center"><strong>Environmental Litigation</strong></p><br>
+        <a href="#environmental-litigation" data-toggle="collapse">
+          <img src="images/environmental2.jpg" class="img-circle pic" alt="Environmental Litigation Image" width="255" height="255">
+        </a>
+        <div id="environmental-litigation" class="collapse">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam rhoncus nulla ex, sed lacinia eros posuere in. In gravida sapien ut neque tempor mattis. Donec.</p>
+          <p>Attorney in charge: Paula Oehme, Sarah Silva</p>
+        </div>
+      </div>
+    </div>
+  
+    <div class="col-sm-4">
+      <div class="well">
+        <p class="text-center"><strong>Tax Disputes</strong></p><br>
+        <a href="#tax-disputes" data-toggle="collapse">
+          <img src="images/tax.jpg" class="img-circle pic" alt="Tax Disputes Image" width="255" height="255">
+        </a>
+        <div id="tax-disputes" class="collapse">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent sit amet rutrum dui, at commodo felis. Aenean quis ex ligula. Phasellus mauris ex, porttitor quis.</p>
+          <p>Attorney in charge: Sarah Silva</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Container (Attorneys Section) -->
+<div id="attorneys" class="container text-center">
+  <h3>Attorneys</h3>
+  <p><em>We love representing you!</em></p>
+  <p>We have created a fictional band website. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+  <br>
+  <div class="row">
+    <div class="col-sm-6">
+      <p class="text-center"><strong>Paula Oehme</strong></p><br>
+      <a href="#paula" data-toggle="collapse">
+        <img src="images/paula.jpg" class="img-circle pic" alt="Attorney Picture" width="255" height="255">
+      </a>
+      <div id="paula" class="collapse">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sodales ex non urna imperdiet consequat. Quisque vel tortor tellus. Vestibulum ullamcorper odio id est porta.</p>
+        <p>Co-founder</p>
+      </div>
+    </div>
+    <div class="col-sm-6">
+      <p class="text-center"><strong>Sarah Silva</strong></p><br>
+      <a href="#sarah" data-toggle="collapse">
+        <img src="images/sarah.jpeg" class="img-circle pic" alt="Attorney" width="255" height="255">
+      </a>
+      <div id="sarah" class="collapse">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris et volutpat massa, at pulvinar ante. Sed tortor est, malesuada venenatis nisl at, consequat convallis ex.</p>
+        <p>Co-founder</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Container (About Us Section) -->
+<div id="about" class="container text-center">
+  <h3>About us</h3>
+  <p><em>Ensuring our clients are well represented is our passion!</em></p>
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam maximus ut sem sit amet mattis. Donec vitae sodales sem. Sed dui felis, bibendum vitae euismod id, semper convallis lorem. Curabitur ac consequat lacus. Nulla nec nulla placerat, auctor dolor porta, ultrices ante. Cras eget tellus eros. Proin bibendum tellus quis elit facilisis, a maximus nisi interdum. Interdum et malesuada fames ac ante ipsum primis in faucibus. Duis in pellentesque ligula.</p>
+  <p>Nunc vehicula cursus enim, nec scelerisque risus convallis pharetra. Cras mattis tellus ex, sit amet accumsan ex iaculis sit amet. Nulla in porta tortor. Nunc finibus lectus et libero gravida, ac pellentesque magna mattis. Morbi scelerisque massa arcu, nec placerat diam vulputate vel. Ut condimentum ante tellus, at fringilla tellus condimentum eu. In accumsan purus ac turpis varius, non imperdiet velit luctus. Nam ac semper ante. Nullam semper est sit amet erat viverra varius. Fusce posuere non lectus ac maximus. Vestibulum molestie, neque consequat finibus aliquet, lectus ligula laoreet ex, et sollicitudin justo lectus vel lacus. Etiam maximus enim at posuere consectetur. Morbi at est dui. Nam dignissim erat lorem, a bibendum tellus convallis id.</p>
+  <p>Morbi at accumsan massa. Phasellus consequat pulvinar ante. Curabitur vel felis ante. Praesent et velit ornare, pretium nunc eget, malesuada lectus. Nullam feugiat venenatis facilisis. Donec lobortis lacus vitae malesuada blandit. Suspendisse id quam eu lacus condimentum molestie. Morbi sagittis, est varius egestas lacinia, neque massa commodo nibh, bibendum aliquam lorem metus ut elit. Suspendisse non imperdiet ante. Curabitur vitae augue mollis ex euismod luctus.</p>
+  <br>
+</div>
+
+<!-- Container (Contact Section) -->
+<div id="contact" class="container">
+  <h3 class="text-center">Contact</h3>
+
+  <div class="row">
+    <div class="col-md-4">
+      <p>Any queries? Please, leave a note.</p>
+      <p><span class="glyphicon glyphicon-map-marker"></span>Limerick, IE</p>
+      <p><span class="glyphicon glyphicon-phone"></span>Phone: +353 061 121 121</p>
+      <p><span class="glyphicon glyphicon-envelope"></span>Email: pslawyers@mail.com</p>
+    </div>
+    <div class="col-md-8">
+      <div class="row">
+        <div class="col-sm-6 form-group">
+          <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
+        </div>
+        <div class="col-sm-6 form-group">
+          <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
+        </div>
+      </div>
+      <textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5"></textarea>
+      <br>
+      <div class="row">
+        <div class="col-md-12 form-group">
+          <button class="btn pull-right" type="submit">Send</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <br>
+</div>
+
+<!-- Footer -->
+<footer class="text-center">
+  <a class="up-arrow" href="#myPage" data-toggle="tooltip" title="BACK TO TOP">
+    <span class="glyphicon glyphicon-chevron-up"></span>
+  </a><br><br>
+  <p id="credits"> Created by:<br/>
+    <!-- Colocar link para redes sociais -->
+    <a href="">Paula Carine Oehme</a><br/>
+    <a href="">Sarah Narayamy Tavares Silva</a><br/>
+    &copy; 2018
+</p>
+</footer>
+
+<script>
+$(document).ready(function(){
+  // Initialize Tooltip
+  $('[data-toggle="tooltip"]').tooltip();
+
+  // Add smooth scrolling to all links in navbar + footer link
+  $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
+
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 900, function(){
+
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+})
+</script>
+
+</body>
+</html>
